@@ -34,6 +34,6 @@ class Handler(BaseHTTPRequestHandler):
         print(fmt % args, flush=True)
 
 
-port = int(os.environ.get("PORT", 8000))
+port = 8000
 print(f"listening on {port}", flush=True)
 HTTPServer(("0.0.0.0", port), Handler).serve_forever()
